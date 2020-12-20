@@ -1,0 +1,32 @@
+.feed__header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 15px 20px;
+}
+.feed__header > h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.feed{
+    flex: .4;
+    border-right: 3px solid var(--twitter-background);
+    overflow-y: scroll;
+    min-width: fit-content;
+}
+.feed::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge add Firefox */
+.feed {
+-ms-overflow-style: none;
+scrollbar-width: none; /* Firefox */
+}
+@media (max-width: 644px){
+    .feed {
+        display: none;
+        background-color: red;
+    }
+}
